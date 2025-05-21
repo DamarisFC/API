@@ -10,4 +10,4 @@ disponibilidade.put("/atualizar-disponibilidade/:id", disponibilidadeController.
 disponibilidade.delete("/deletar/:id", disponibilidadeController.deletarDisponibilidade);
 disponibilidade.get("/:idProfissional", disponibilidadeController.disponibilidadePofissional);
 
-export default disponibilidade();
+export default disponibilidade;
