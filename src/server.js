@@ -1,7 +1,7 @@
 import express from "express";
 import { logEvents, logger } from "./middlewares/logger.midleware.js"
 import dotenv from "dotenv"
-import atendimentoRouter from "./modules/atendimento/routes.js"
+import atendimentoRouter from "./routes/api.routes.js";
 import maeSolo from "./routes/api.routes.js";
 
 dotenv.config();
