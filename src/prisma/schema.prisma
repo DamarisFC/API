@@ -110,10 +110,15 @@ model   Encaminhamento {
 }
 
 model Atendimento {
-  id                      String            @id @default(uuid())
-  idEncaminhamento        String            @map("id_encaminhamento")
-  observacoes             String
-  data                    DateTime
-  encaminhamento          Encaminhamento    @relation(fields: [idEncaminhamento], references: [id])
-  @@map("atendimento")
+  id                   String   @id @default(uuid())
+  id_mulher            String
+  tipo_atendimento     String
+  observacoes          String?
+  data_atendimento     DateTime
+  profissional_resp    String
+  status_atendimento   String
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+
+  @@map("atendimentos")
 }
