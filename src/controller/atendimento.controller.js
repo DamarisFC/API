@@ -2,6 +2,12 @@ import { PrismaClient } from '@prisma/client'
 const prisma = new PrismaClient()
 
 export const createAtendimento = async (req, res) => {
+    const {
+      idEncaminhamento,
+      observacoes,
+      data,
+      status_atendimento
+    } = req.body
   try {
     const atendimento = await prisma.atendimento.create({
       data: req.body
