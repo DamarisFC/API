@@ -25,6 +25,7 @@
   "homepage": "https://github.com/DamarisFC/API#readme",
   "dependencies": {
     "@prisma/client": "^6.7.0",
+    "api": "file:",
     "date-fns": "^4.1.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
